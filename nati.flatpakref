@@ -1,0 +1,11 @@
+[Flatpak Ref]
+Name=app.nati.nati
+Branch=master
+Title=Nati
+Url=https://kamdevapp.github.io/flatpak/repo/
+SuggestRemoteName=nati
+Homepage=https://github.com/kamdevapp/nati
+Icon=https://kamdevapp.github.io/flatpak/nati.png
+RuntimeRepo=https://dl.flathub.org/repo/flathub.flatpakrepo
+IsRuntime=false
+GPGKey=mDMEawbYihYJKwYBBAHaRw8BAQdA1uST68hmmF43qQd8YdIA51kOoa5itKqhgE5t5XEXYAG0I05hdGkgRmxhdHBhayByZXBvc2l0b3J5IChrYW1kZXZhcHApiJMEExYKADsWIQT+N/vP9iur/9YV+saYUvH07P/YzgUCawbYigIbAwULCQgHAgIiAgYVCgkICwIEFgIDAQIeBwIXgAAKCRCYUvH07P/YzvJwAQC/PEs+p7yBJSFdR6sDj1SVH/13r1QSM5giiKtuLs80dAEAyDBs3Y5WuvA5JjSfXGiFSvii2YEi06CiAgq/Sgfe3Qw=

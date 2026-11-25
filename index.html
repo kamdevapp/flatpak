@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nati for Linux</title>
+<link rel="icon" href="nati.png">
+<style>
+  :root { --bg: #fdf6f8; --fg: #241a1e; --muted: #6b5a61; --card: #ffffff; --accent: #e0457b; --code: #f3e8ec; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #17111a; --fg: #f4ecef; --muted: #b9a7ae; --card: #221a25; --accent: #ff6d9f; --code: #2e2431; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.55 system-ui, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px; }
+  header { display: flex; gap: 20px; align-items: center; margin-bottom: 28px; }
+  header img { width: 88px; height: 88px; border-radius: 22px; }
+  h1 { margin: 0; font-size: 2rem; }
+  header p { margin: 4px 0 0; color: var(--muted); }
+  .card { background: var(--card); border-radius: 16px; padding: 24px; margin-bottom: 20px; }
+  .btn { display: inline-block; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600;
+         padding: 12px 22px; border-radius: 999px; margin: 8px 0 4px; }
+  code, pre { background: var(--code); border-radius: 8px; font-size: .9rem; }
+  code { padding: 2px 6px; }
+  pre { padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all; }
+  h2 { font-size: 1.15rem; margin: 0 0 8px; }
+  .muted { color: var(--muted); font-size: .92rem; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="nati.png" alt="">
+    <div>
+      <h1>Nati for Linux</h1>
+      <p>Your music, your cloud · Twoja muzyka, Twoja chmura</p>
+    </div>
+  </header>
+
+  <div class="card">
+    <h2>Install</h2>
+    <a class="btn" href="nati.flatpakref">Install Nati</a>
+    <p>The button opens GNOME Software or KDE Discover. After installing, Nati updates together with your
+    system and you can find it in the app store. Requires Flatpak (preinstalled on Fedora, Linux Mint and many
+    others).</p>
+    <p class="muted">Terminal:</p>
+    <pre>flatpak install --user https://kamdevapp.github.io/flatpak/nati.flatpakref</pre>
+  </div>
+
+  <div class="card">
+    <h2>Instalacja (po polsku)</h2>
+    <a class="btn" href="nati.flatpakref">Zainstaluj Nati</a>
+    <p>Przycisk otwiera GNOME Software albo KDE Discover. Po instalacji Nati aktualizuje się razem
+    z systemem i jest w wyszukiwarce sklepu. Potrzebny Flatpak (jest od razu w Fedorze, Linux Mincie
+    i wielu innych).</p>
+  </div>
+
+  <div class="card">
+    <h2>Repository only · Samo repozytorium</h2>
+    <pre>flatpak remote-add --user --if-not-exists nati https://kamdevapp.github.io/flatpak/nati.flatpakrepo</pre>
+    <p class="muted">Signing key · klucz podpisu: <a href="nati.gpg">nati.gpg</a></p>
+  </div>
+
+  <p class="muted">Other systems, AppImage and release notes · Inne systemy, AppImage i opis wydań:
+    <a href="https://github.com/kamdevapp/nati">github.com/kamdevapp/nati</a></p>
+</main>
+</body>
+</html>
